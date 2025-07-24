@@ -7,11 +7,9 @@ export function ServiceInner() {
 
     return (
         <>
-            <Header />
             <main>
                 SERVICE INNER PAGE - {service}
             </main>
-            <Footer />
         </>
     );
 }

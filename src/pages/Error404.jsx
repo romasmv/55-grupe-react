@@ -7,11 +7,9 @@ export function Error404() {
 
     return (
         <>
-            <Header />
             <main>
                 ERROR 404 PAGE - {splat}
             </main>
-            <Footer />
         </>
     );
 }
