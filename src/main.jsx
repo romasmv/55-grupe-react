@@ -5,6 +5,7 @@ import './index.css';
 import { App } from './App.jsx';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import { Home } from './pages/Home.jsx';
+import { Todo } from './pages/Todo.jsx';
 import { About } from './pages/About.jsx';
 import { Register } from './pages/Register.jsx';
 import { Error404 } from './pages/Error404.jsx';
@@ -19,6 +20,7 @@ createRoot(document.getElementById('root')).render(
       <Routes>
         <Route element={<PublicTemplates />}>
           <Route path="/" element={<Home />} />
+          <Route path="/todo" element={<Todo/>} />
           <Route path="/about" element={<About />} />
           <Route path="/services" element={<Services />} />
           <Route path="/services/:service" element={<ServiceInner />} />
