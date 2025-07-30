@@ -13,11 +13,9 @@ export function Todo() {
         const data = JSON.parse(localStorage.getItem(dataKey));
         console.log(data);
 
-        if (data) {
+        if (data && data.length > 0) {
             setList(data);
-        } else {
-            localStorage.setItem(dataKey, JSON.stringify(list))
-        }
+        } 
     },[]);
     
     useEffect(() => {
