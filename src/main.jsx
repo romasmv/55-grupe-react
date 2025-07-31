@@ -13,6 +13,7 @@ import { Login } from './pages/Login.jsx';
 import { Services } from './pages/Services.jsx';
 import { ServiceInner } from './pages/ServicesInner.jsx';
 import { PublicTemplates } from './templates/PublicTemplates.jsx';
+import { Dashboard } from './pages/Dashboard.jsx';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
@@ -26,8 +27,15 @@ createRoot(document.getElementById('root')).render(
           <Route path="/services/:service" element={<ServiceInner />} />
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
-          <Route path="/*" element={<Error404 />} />
         </Route>
+
+         <Route element={<AdminTemplates />}>
+          <Route path="/dashboard" element={<Dashboard />} />
+         </Route>
+         
+         <Route element={<PublicTemplates />}>
+          <Route path="*" element={<Error404 />} />
+         </Route>
       </Routes>
     </BrowserRouter>
   </StrictMode>,

@@ -15,7 +15,10 @@ export function Todo() {
 
         if (data && data.length > 0) {
             setList(data);
-        } 
+            setId(data.at(-1).id + 1);
+        } else {
+            localStorage.setItem(dataKey, JSON.stringify(list));
+        }
     },[]);
     
     useEffect(() => {
