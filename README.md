@@ -16,17 +16,15 @@ If you are developing a production application, we recommend using TypeScript wi
 ![Eco Status](https://img.shields.io/badge/ECO-Friendly-green.svg)
 [![Discord](https://discord.com/api/guilds/571393319201144843/widget.png)](https://discord.gg/dRwW4rw)
 
-# JavaScript project
+# MOVIES LIKE CINEMAS WEBSITE
 
-_DOM functionality no designe_
+_React + Vite, MySQL, sing in/sing up/login/edit.... functionality, designe_
 
 <br>
 
 ## 🌟 About
 
-This project is for educational porpuses only. Pull request are welcome, but priority for project authors! Thank you for your cooperation!
-
-Site published at: https://romasmv.github.io/55-grupe-dom/
+This project is for educational purposes only. On this page, I use React for the frontend, Express.js for the backend, and a phpMyAdmin MariaDB MySQL database. The page includes React context wrappers, state management, and useEffect hooks. It features user registration and login with hashed passwords.
 
 ## 🎯 Project features/goals
 
@@ -34,7 +32,9 @@ Site published at: https://romasmv.github.io/55-grupe-dom/
 -   responsive design
 -   HTML forms
 -   javaScript
-        
+-   CLIENT: react.js
+-   SERVER: express.js
+-   API 
 
 ## 🧰 Getting Started
 
@@ -58,7 +58,7 @@ Would like to run this project locally? Open terminal and follow these steps:
 
 1. Clone the repo
     ```sh
-    git clone https://github.com/romasmv/55-grupe-dom.git
+    git clone https://github.com/romasmv/55-grupe-react.git
     ```
 2. Install NPM packages
     ```sh
